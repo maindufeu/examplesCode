@@ -16,16 +16,7 @@
       canvas.addEventListener('mousemove', function(evt) {
         var mousePos = getMousePos(canvas, evt);
         var message = 'Mouse position: ' + mousePos.x + ',' + mousePos.y;
-        console.log(message);
-        circle.clearRect(0,0,1200,800);
-        circle.beginPath();
-        circle.arc(mousePos.x,mousePos.y,10,0,Math.PI*2,true);
-        circle.fill();
-      }, false);
-
-      (function(){
-         circle = canvas.getContext('2d');
-         circle.fillStyle ="rgba(163,208,244,0.5)";         
+        console.log(message);         
       })();
     </script>
   </body>
